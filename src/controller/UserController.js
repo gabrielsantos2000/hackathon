@@ -25,7 +25,7 @@ module.exports = {
             return res.status(200).json({ error: "Este usuário já existe" })
         } catch (error) {
             res.status(400).send({
-                message: 'Falha ao deletar'
+                message: 'Falha ao criar usuário'
             })
         }
     },
@@ -41,7 +41,7 @@ module.exports = {
             return res.status(400).json({ msg: "Não existe nenhum usuário criado!" })            
         } catch (error) {
             res.status(400).send({
-                message: 'Falha ao deletar'
+                message: 'Falha ao exibir usuários'
             })
         }
 
